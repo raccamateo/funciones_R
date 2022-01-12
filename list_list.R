@@ -1,5 +1,7 @@
+#use of lapply() function to extract list inside a list variable
 lista_extr <- lapply(
-  X = dataframe$variable_lista,
+  # X = df$var
+  X = dataframe$variable_list,
   FUN = function(x)
-  {x[[“lista_dentro_de_la_lista”]]}
+  {x[[“list_inside_list”]]}
 )
